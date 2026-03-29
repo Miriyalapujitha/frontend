@@ -1,0 +1,106 @@
+body { margin:0; font-family:Poppins; }
+
+header {
+  display:flex;
+  justify-content:space-between;
+  padding:15px;
+  background:black;
+  color:white;
+}
+
+nav a { color:white; margin:10px; }
+
+.hero {
+  height:90vh;
+  background: url('https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=1600&q=80') no-repeat center/cover;
+  color:white;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+
+}
+
+.btn {
+  background:orange;
+  padding:10px 20px;
+}
+
+.cards {
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap:30px;
+  padding:20px;
+}
+
+.cards div {
+  background:white;
+  padding:25px;
+  border-radius:15px;
+  text-align:center;
+  font-size:18px;
+  font-weight:500;
+  box-shadow:0 10px 25px rgba(0,0,0,0.1);
+  transition:0.3s;
+  cursor:pointer;
+}
+
+.cards div:hover {
+  transform:translateY(-10px);
+  box-shadow:0 15px 35px rgba(0,0,0,0.2);
+}
+
+.whatsapp {
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:green;
+  padding:15px;
+  border-radius:50%;
+}
+
+.row {
+  display:flex;
+  gap:10px;
+}
+
+.row input {
+  flex:1;
+}
+#contact form {
+  max-width:500px;
+  margin:auto;
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+#contact input,
+#contact textarea {
+  padding:12px;
+  border-radius:8px;
+  border:1px solid #ccc;
+  font-size:16px;
+  outline:none;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  border-color:#ff9800;
+}
+
+#contact button {
+  padding:12px;
+  border:none;
+  background:#ff9800;
+  color:white;
+  font-size:18px;
+  border-radius:8px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+#contact button:hover {
+  background:#e68900;
+}
